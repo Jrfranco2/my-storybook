@@ -7,18 +7,24 @@ export interface MyLabelProps {
   size: "normal" | "h1" | "h2" | "h3";
   /** Capitalizar la palabra */
   allCaps?: boolean;
-  /**color */
+  /**Text color */
   color?: "primary" | "secondary" | "tertiary";
+  /** Color personalizado de la fuente */
+  fontColor?: string;
 }
 
 export const MyLabel = ({
-  label = "No label",
-  size = "normal",
   allCaps = false,
   color = "primary",
+  fontColor,
+  label = "No label",
+  size = "normal",
 }: MyLabelProps) => {
   return (
-    <span className={`label ${size} ${allCaps && "capitalize"} text-${color}`}>
+    <span
+      className={`label ${size} ${allCaps && "capitalize"} text-${color}`}
+      style={{ color: fontColor }}
+    >
       {label}
     </span>
   );

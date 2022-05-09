@@ -37,3 +37,12 @@ Tertiary.args = {
   size: "normal",
   allCaps: true,
 };
+
+export const CustomFontColor = Template.bind({});
+
+CustomFontColor.args = {
+  label: "Custom font color label",
+  size: "h1",
+  allCaps: false,
+  fontColor: "#02d092",
+};
