@@ -46,3 +46,12 @@ CustomFontColor.args = {
   allCaps: false,
   fontColor: "#02d092",
 };
+
+export const CustomBackgroundColor = Template.bind({});
+
+CustomBackgroundColor.args = {
+  label: "Custom background color label",
+  size: "h2",
+  fontColor: "white",
+  backgroundColor: "black",
+};
