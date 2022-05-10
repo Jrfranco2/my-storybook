@@ -34,10 +34,12 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "TODO",
+    "build": "npm run clean && tsc && npm run copy-files",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=28cf58b7280d"
+    "chromatic": "npx chromatic --project-token=28cf58b7280d",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +68,8 @@
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "0.0.11",
     "babel-loader": "^8.2.5",
-    "chromatic": "^6.5.4"
+    "chromatic": "^6.5.4",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2"
   }
 }
