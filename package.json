@@ -8,7 +8,7 @@
   "homepage": "https://jfportfolio.vercel.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jrfranco2/my-storybook"
+    "url": "https://github.com/Jrfranco2/my-storybook.git"
   },
   "peerDependencies": {
     "react": ">=16",
